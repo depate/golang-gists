@@ -10,7 +10,7 @@ import (
 func main() {
 	var function string
 
-	fmt.Println("Which function-# to call?")
+	fmt.Println("Who you gonna call?")
 	fmt.Scanln(&function)
 
 	switch function {
@@ -29,7 +29,7 @@ func main() {
 	case "6":
 		panicRecovery()
 	default:
-		fmt.Println("Give a number [0,6]")
+		fmt.Println("No ghosts here. Give a number [0,6]")
 	}
 
 }
@@ -92,7 +92,7 @@ func deferFatal() {
 	defer log.Println("I am first")
 }
 
-// What about error handling?
+// What about (fatal) error handling?
 
 func panicking() {
 	defer log.Println("I am last")
